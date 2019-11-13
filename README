@@ -1,0 +1,77 @@
+Team Member :
+BHARAT BANSAL : 2591-1118
+
+Instructions to run the code :
+
+cd gossip
+
+#### Running Gossip:
+
+```
+$ mix run my_program.exs 100 full gossip
+$ mix run my_program.exs 100 line gossip
+$ mix run my_program.exs 500 rand2D gossip
+$ mix run my_program.exs 100 3Dtorus gossip
+$ mix run my_program.exs 100 honeycomb gossip
+$ mix run my_program.exs 100 randhoneycomb gossip
+```
+
+#### Running PushSum
+
+```
+$ mix run my_program.exs 100 full pushsum
+$ mix run my_program.exs 100 line pushsum
+$ mix run my_program.exs 500 rand2D pushsum
+$ mix run my_program.exs 100 3Dtorus pushsum
+$ mix run my_program.exs 100 honeycomb pushsum
+$ mix run my_program.exs 100 randhoneycomb pushsum
+```
+
+
+WHAT IS WORKING: (Algorithms and Topologies included):
+
+#Gossip Protocol is working for the following topologies :
+
+* Full(full)
+* Line(line)
+* Random2D(rand2D)
+* 3D Torus(3Dtorus)
+* Honeycomb(honeycomb)
+* Random Honeycomb(randhoneycomb)
+
+# Pushsum Protocol is working for the following topologies 
+
+* Full(full)
+* Line(line)
+* Random2D(rand2D)
+* 3D Torus(3Dtorus)
+* Honeycomb(honeycomb)
+* Random Honeycomb(randhoneycomb)
+
+Maximum no. of nodes for which I tried to run both the protocols for each topology:
+
+# Gossip Protocol:
+ 
+Topology Type                              Maximum nodes            Convergence Time(ms)
+
+* Random2D(rand2D)                           2000                       5094      
+* 3D Torus(3Dtorus)                          5000                       4219
+* Honeycomb(honeycomb)                       5000                       13563    
+* Random Honeycomb(randhoneycomb)            5000                       5687
+* Full(full)                                 2000                      12250
+* Line(line)                                 1000                      133813
+
+
+# Push-sum Protocol:
+ 
+Topology Type                              Maximum nodes            Convergence Time(ms)
+
+* Random2D(rand2D)                           2000                       5813      
+* 3D Torus(3Dtorus)                          5000                       4437
+* Honeycomb(honeycomb)                       5000                       14032    
+* Random Honeycomb(randhoneycomb)            5000                       6016
+* Full(full)                                 2000                      12281
+* Line(line)                                 1000                      157922
+
+
+
